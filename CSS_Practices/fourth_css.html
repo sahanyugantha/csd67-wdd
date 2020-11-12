@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Decorations</title>
+    <style>
+        body{
+            margin : 0px; 
+            padding: 0px;
+        }
+        .container{
+            background-color: blanchedalmond;
+            height: 200px;
+        }
+
+        #some-text{
+            font-size: 24px;
+            font-weight: bold;
+            /* font-style: italic; */
+            text-decoration : none;
+        }
+        #link1{
+            text-decoration: none;
+        }
+        #heading1{
+            color: firebrick;
+            text-transform: capitalize;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading1">some heading</h1>
+        <p id="some-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, exercitationem.</p>
+        <a id="link1" href="somelink">Visit to some page</a>
+    </div>
+</body>
+</html>
