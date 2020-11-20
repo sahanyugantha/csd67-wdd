@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - 02</title>
+</head>
+<body>
+    
+    <h2>JavaScript Variables</h2>
+
+    <script>
+
+        /*
+        ** VARIABLES
+        */
+
+        var num1 = 21;
+        var num2 = 48;
+
+        var total = num1 + num2;
+
+        var average = total/2;
+
+
+        console.log(average);
+
+        document.write("Total is "+total);
+
+        /*
+        ** ARRAYS
+        */
+
+        var students = ["Razeen", "Shashkia", "Arkam", "Fathima", "Nafrin", "Nethmi"];
+        var sampleArray = ["bla bla", 45, 89.8, true, "ghgj"];
+
+        //determine the size of an array.
+        var length = students.length;
+
+        console.log(sampleArray[2]);
+
+        for(var i = 0; i < length; i++){
+            document.write("<p> Name : "+students[i]+"</p>")
+        }
+
+    </script>
+</body>
+</html>
