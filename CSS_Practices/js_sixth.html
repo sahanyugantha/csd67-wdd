@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - EventListener</title>
+    <style>
+        #btn-sample{
+            width: 200px;
+            height: 80px;
+            background-color: mediumseagreen;
+            font-size: x-large;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="title">Welcome to JS EventListeners</h3>
+    <button id="btn-sample" onmouseover="highlight()">Click me</button>
+
+    <script>
+
+        var btnSample = document.getElementById("btn-sample");
+
+        //Add click event listener
+        btnSample.addEventListener("click", welcome);
+
+        function welcome(){
+            //kznxkdfjgl;
+            document.write("<h1>Hello!, how are you ?</h1>");
+        }
+
+        function highlight(){
+            var title = document.getElementById("title");
+            title.style.color = "rgb(240, 101, 34)";
+        }
+
+    </script>
+</body>
+</html>

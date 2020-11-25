@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Advance</title>
+</head>
+<body>
+    
+    <script>
+
+        var student = {id:1, name:"Nafrin", age:20, married:false, weight:54.4};
+
+        document.write("<p> Name : "+student.name+"</p>");
+        document.write("<p> Age : "+student.age+"</p>");
+
+
+
+        //create fake db using JS objects
+        var students = [
+            {id:1, name:"Nafrin", age:20, married:false, weight:54.4},
+            {id:2, name:"Shashika", age:15, married:false, weight:44.8},
+            {id:3, name:"Gughan", age:21, married:true, weight:64.4},
+            {id:4, name:"Vivethanan", age:20, married:false, weight:84.0},
+            {id:5, name:"Arkam", age:19, married:false, weight:50.1}
+        ];
+
+    </script>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+        <script>
+            for(var i=0; i < students.length; i++){
+                document.write("<tr>");
+                    document.write("<td>"+students[i].id+"</td>");
+                    document.write("<td>"+students[i].name+"</td>");
+                    document.write("<td>"+students[i].age+"</td>");
+                document.write("</tr>");
+            }
+        </script>
+
+    </table>
+
+
+</body>
+</html>
