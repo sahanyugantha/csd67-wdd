@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Eventlisteners - 02</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    
+
+    <!-- Using addEventListener() method -->
+    <div id = "parent-01">
+
+        <div id = "child-01">
+
+        </div>
+
+    </div>
+
+
+    <h2 id="parent-text">Parent</h2>
+    <h2 id="child-text">Child</h2>
+    
+
+    <script>   
+        
+        var parent = document.getElementById("parent-01");
+        var child = document.getElementById("child-01");
+
+        parent.addEventListener("click", forParent, true);
+        child.addEventListener("click", forChild, true);
+
+        function forParent(){
+            document.getElementById("parent-text").innerHTML = "Clicked on parent";
+            alert("clicked on parent");
+        }
+
+        function forChild(){
+            document.getElementById("child-text").innerHTML = "Clicked on child";
+            alert("clicked on child");
+        }
+
+    </script>
+
+</body>
+</html>

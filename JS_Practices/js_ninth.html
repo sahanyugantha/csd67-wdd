@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - EventListener - 03</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <div>
+        <label>Enter number one</label><br/>
+        <input type="number" id="num-1" > <br/>
+        <label>Enter number two</label><br/>
+        <input type="number" id="num-2" > <br/>
+        <button id="btn-calculate">Calculate</button>
+    </div>
+
+    <h1>Answer : <span id="answer">0</span></h1>
+
+    <script>
+
+        var btnCal = document.getElementById("btn-calculate");
+        btnCal.addEventListener("click", function(){
+           // e.preventDefault();
+
+            var num1 = document.getElementById("num-1").value;
+            var num2 = document.getElementById("num-2").value;
+            
+            addTwoNummbers(num1, num2);
+        });
+
+        function addTwoNummbers(num1, num2){
+            var total = parseInt(num1) + parseInt(num2);
+            document.getElementById("answer").innerHTML = total;
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Eventlisteners - 02</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    
+
+    <!-- Using inline Event Listener attributes-->
+    <div id ="box-01" onmouseover="mouseOver()" onmouseout="mouseLeave()">
+        <h3 id="some-text"></h3>
+    </div>
+
+
+    <!-- Using addEventListener() method -->
+    <div>
+
+    </div>
+
+    <script>
+
+        function mouseOver(){
+            document.getElementById("some-text").innerHTML = "Don't click me!";
+            var box = document.getElementById("box-01");
+            box.style.backgroundColor = "#a8350b";
+            box.style.width = "240px";
+
+        }
+
+        function mouseLeave(){
+            document.getElementById("some-text").innerHTML = "";
+            var box = document.getElementById("box-01");
+            box.style.backgroundColor = "orangered";
+            box.style.width = "200px";
+        }
+
+    </script>
+
+</body>
+</html>

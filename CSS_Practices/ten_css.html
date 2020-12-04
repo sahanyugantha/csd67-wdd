@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo classes</title>
+
+    <style>
+
+        .container{
+            background-color: #cccbcb;
+            padding: 20px;
+        }
+
+        #item{
+            width: 200px;
+            height: 100px;
+            font-size: 30px;
+            color: aqua;
+            background-color: rgb(7, 46, 153);
+            transition: 0.2s;
+        }
+
+        #item:hover{
+            background-color: rgb(94, 94, 238);
+            font-size: 24px;
+            border : 1px solid #ffffff;
+            width: 210px;
+            height: 110px;
+            transition: 0.2s;
+        }
+
+        .in{
+            width: 200px;
+            height: 30px;
+            font-size: large;
+            transition: 0.3s;
+        }
+
+        .in:focus {
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        table, td, tr, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            padding: 20px;
+        }
+
+        #tbl tr{
+            background-color: bisque;
+        }
+
+        #tbl tr:first-child {
+            background-color: aquamarine;
+        }
+
+        /* #tbl tr:nth-child(3){
+            background-color: coral;
+        } */
+        #tbl tr:nth-child(even){
+            background-color: coral;
+        }
+        /* #tbl tr:nth-child(odd){
+            background-color: rgb(154, 103, 248);
+        } */
+
+        #para{
+            color: darkred;
+        }
+
+        #para:first-letter{
+            font-size: 24px;
+            color: red;
+        }
+
+        #para::first-line{
+            text-decoration: underline;
+        }
+
+        #my-form{
+            border: 1px solid black;
+            margin: 30px;
+            background-color: burlywood;
+        }
+
+        #my-form input[placeholder] {
+            width: 200px;
+        }
+
+        #my-form input[type="text"]{
+            border: 2px solid greenyellow;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+       
+        <div id="item">
+            Some contents
+        </div>
+
+        <p>Enter your name</p>
+        <input class="in" type="text" placeholder="enter the name" >
+
+
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iste reiciendis fugit quas labore repellendus? Quod sequi eligendi ducimus officiis impedit est, debitis tempore architecto quaerat eum voluptates beatae nemo a temporibus, molestiae tenetur enim culpa nam soluta quibusdam fuga? Animi tempora ea hic incidunt officia cupiditate dolore et numquam, ipsam, natus quia optio! Autem nobis aliquam consequatur eligendi, vitae odio fugit numquam eaque itaque harum tempora ad, fugiat ratione quae non nostrum dignissimos veniam? Nobis voluptatem dicta, optio eum maxime numquam ad dolores ut facere non doloribus magnam inventore repellat veniam, aliquam officiis hic dignissimos a beatae provident nulla! Delectus, adipisci corporis commodi expedita explicabo aperiam ex incidunt aspernatur quisquam, natus itaque exercitationem harum sequi quas neque accusantium doloribus non deleniti minus pariatur atque quae iusto debitis. Nemo dolorem ex voluptatem non, animi commodi repudiandae totam nobis nesciunt placeat fuga sed! Cupiditate totam exercitationem consequatur pariatur praesentium eaque! Adipisci.</p>
+
+    </div>
+
+
+    <form id="my-form">
+
+        <label>Enter name</label><br/>
+        <input type="text" placeholder="enter name"><br/>
+        <label>Enter address</label><br/>
+        <input type="text" ><br/>
+        <label>Enter email</label><br/>
+        <input type="email" placeholder="enter email"><br/>
+    </form>
+   
+
+
+    <table id="tbl">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>Bla 1</td>
+            <td>Bla bal</td>
+        </tr>
+        <tr>
+            <td>Bla 1</td>
+            <td>Bla bal</td>
+        </tr>
+        <tr>
+            <td>Bla 1</td>
+            <td>Bla bal</td>
+        </tr>
+        <tr>
+            <td>Bla 1</td>
+            <td>Bla bal</td>
+        </tr>
+    </table>
+
+</body>
+</html>

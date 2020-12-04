@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+
+    <style>
+        .container{
+            background-color: #d8d6d6;
+            padding: 10px;
+        }
+
+        /* Descendent Selector example */
+        /* .container .box{
+            background-color: rgb(134, 252, 212);
+        } */
+
+        /* Child Selector example */
+        /* .container > div{
+            background-color: rgb(243, 161, 61);
+        } */
+
+        /* Adjacent sibling selector */
+        /* .box + h3{
+            background-color: rgb(241, 126, 241);
+        } */
+
+        /* General Sibling selector */
+        .box ~ h1 {
+            background-color: rgb(245, 214, 38);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Combinators</h1>
+    <div class="container">
+        <h1>Main Contents</h1>
+        <div class="box" id="box-01">
+            <h2>Some Heading 01</h2>
+            <p>Some Paragraph 01</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corrupti quibusdam ad est nemo amet totam suscipit eum eos accusamus.</p>
+        </div>
+        
+
+        <h3> Some other child</h3>
+
+        <div class="box" id="box-02">
+            <h2>Some Heading 02</h2>
+            <p>Some Paragraph 03</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sint aperiam hic tempora voluptatibus, atque quam consectetur reprehenderit modi veritatis ipsam illum voluptate itaque nisi odit ducimus, perspiciatis, quidem distinctio. Placeat autem ipsa libero neque, assumenda expedita molestias saepe ullam nisi aut commodi fuga aliquid, tempora eum eligendi eos pariatur.</p>
+        </div>
+
+        <h1>New Section</h1>
+        <section>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempore maiores sint similique, incidunt adipisci saepe ipsam voluptatem sunt suscipit ab necessitatibus sapiente cupiditate repellat praesentium commodi quibusdam quidem quaerat ea maxime? Nam quibusdam deleniti dignissimos esse minima? Accusantium earum at quam laboriosam ipsum, asperiores aspernatur aliquid sint quis nam explicabo non blanditiis nihil amet fugiat repellendus voluptatem eos, corrupti provident laborum dolore! Excepturi minima sint eum quam enim velit accusamus fuga magni adipisci alias non dolorem assumenda rem at modi corrupti officia, provident, doloribus ullam a asperiores numquam sapiente molestiae. Officia totam, nesciunt error culpa quaerat molestias accusantium alias.</p>
+            </div>
+        </section>
+
+        <h1>New Section</h1>
+    </div>
+    
+</body>
+</html>
